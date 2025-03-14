@@ -8,10 +8,10 @@ namespace Ejercicio32
 {
     class Rombo
     {
-        private int tamaño;
+        private int tamaño;   // atributos
         private char[,] matriz;
 
-        public Rombo(int tamaño)
+        public Rombo(int tamaño) // constructor
         {
             if (tamaño % 2 == 0)
             {
