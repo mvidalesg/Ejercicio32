@@ -33,13 +33,13 @@ namespace Ejercicio32
 
         public void Dibujar()
         {
-            int mitad = tamaño / 2;
-            for (int i = 0; i <= mitad; i++)
+            int mitad = tamaño / 2;  // Calculamos la mitad del tamaño del rombo
+            for (int i = 0; i <= mitad; i++)  // Iteramos desde la fila superior hasta la mitad del rombo
             {
-                matriz[i, mitad - i] = '#';
-                matriz[i, mitad + i] = '#';
-                matriz[tamaño - i - 1, mitad - i] = '#';
-                matriz[tamaño - i - 1, mitad + i] = '#';
+                matriz[i, mitad - i] = '#'; // Lado izquierdo arriba
+                matriz[i, mitad + i] = '#'; // Lado derecho arriba
+                matriz[tamaño - i - 1, mitad - i] = '#'; // Lado izquierdo abajo
+                matriz[tamaño - i - 1, mitad + i] = '#'; // Lado derecho abajo
             }
         }
 
